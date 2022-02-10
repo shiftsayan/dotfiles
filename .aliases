@@ -1,4 +1,4 @@
-alias config='/usr/bin/git --git-dir=/Users/shift/.cfg/ --work-tree=/Users/shift'
+alias dot='/usr/bin/git --git-dir=/Users/shift/.dotfiles/ --work-tree=/Users/shift'
 
 alias python=python3
 alias pip=pip3
