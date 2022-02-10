@@ -1,0 +1,16 @@
+[user]
+	name = shiftsayan
+	email = sayan.chaudhry@gmail.com
+[core]
+	excludesfile = /Users/shift/.gitignore
+[init]
+	defaultBranch = main
+[push]
+	default = current
+[pull]
+	rebase = false
+[alias]
+	x = !git add . && git commit -m \"$@\" && git push && :
+	sup = push --set-upstream origin main
+	del = branch -D
+	amend = commit --amend --no-edit

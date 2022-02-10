@@ -1,3 +1,5 @@
+alias config='/usr/bin/git --git-dir=/Users/shift/.cfg/ --work-tree=/Users/shift'
+
 alias python=python3
 alias pip=pip3
 
@@ -24,4 +26,4 @@ function mkvenv {
 function rmvenv {
   # Remove venv
   rm -rf venv
-}alias config='/usr/bin/git --git-dir=/Users/shift/.cfg/ --work-tree=/Users/shift'
+}
