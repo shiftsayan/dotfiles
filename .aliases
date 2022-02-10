@@ -1,0 +1,27 @@
+alias python=python3
+alias pip=pip3
+
+function mkcd {
+  last=$(eval "echo \$$#")
+  if [ ! -n "$last" ]; then
+    echo "Enter a directory name"
+  elif [ -d $last ]; then
+    echo "\`$last' already exists"
+  else
+    mkdir $@ && cd $last
+  fi
+}
+
+alias youtube-dl-mp3="noglob youtube-dl --extract-audio --audio-format mp3"
+
+function mkvenv {
+  # Initialize venv
+  python -m venv venv
+  # Activate venv
+  . venv/bin/activate
+}
+
+function rmvenv {
+  # Remove venv
+  rm -rf venv
+}alias config='/usr/bin/git --git-dir=/Users/shift/.cfg/ --work-tree=/Users/shift'
